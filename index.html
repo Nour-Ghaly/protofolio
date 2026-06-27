@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nour Ghaly | Backend & Full-Stack Developer Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional Portfolio of Nour Ghaly, a Backend & Full-Stack Developer specializing in Django, PostgreSQL, and scalable software solutions.">
+    <meta name="keywords" content="Nour Ghaly, Backend Developer, Django, Full Stack, Software Engineer, Egypt Developer, PostgreSQL">
+    <meta name="author" content="Nour Ghaly">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nour Ghaly | Backend & Full-Stack Developer">
+    <meta property="og:description" content="Computer Science student & Software Engineer specializing in scalable web applications.">
+    <meta property="og:image" content="assets/images/profile.webp">
+
+    <!-- Bootstrap 5.3 Grid Only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nour Ghaly",
+      "jobTitle": "Backend & Full-Stack Developer",
+      "url": "https://github.com/Nour-Ghaly",
+      "sameAs": [
+        "https://www.linkedin.com/in/nour-ghaly-58482b322/"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Zagazig University"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Premium Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="logo-anime">NG</div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="load-progress"></div>
+            </div>
+            <span class="loading-text">Initializing Secure Connection...</span>
+        </div>
+    </div>
+
+    <!-- Custom Cursor Glow -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+
+    <!-- Header Navbar -->
+    <header class="sticky-navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-circle">NG</span>
+                <span class="logo-name">Nour Ghaly</span>
+            </a>
+            <button class="nav-toggle" aria-label="toggle navigation" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#journey" class="nav-link">Journey</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="btn btn-primary nav-talk-btn">Let's talk <i class="fa-solid fa-arrow-right"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100 py-5 hero-main-row">
+                <div class="col-lg-7 order-2 order-lg-1">
+                    <div class="hero-content">
+                        <span class="hero-welcome">Welcome to my portfolio</span>
+                        <h1 class="hero-title">Hi, I'm <span class="text-accent-color">Nour Ghaly.</span></h1>
+                        <h2 class="hero-subtitle"><span id="typing-text"></span></h2>
+                        <p class="hero-desc">Building scalable web applications, database-driven systems, and impactful software solutions with Django, PostgreSQL, and modern REST APIs.</p>
+                        
+                        <blockquote class="hero-quote">"Turning ideas into reliable software solutions."</blockquote>
+
+                        <div class="hero-cta">
+                            <a href="CV/Nour_Ghaly_CV_WE_Internship.pdf" download class="btn btn-primary"><i class="fa-solid fa-download"></i> Download CV</a>
+                            <a href="#projects" class="btn btn-outline">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="#contact" class="btn-link-contact">Contact Me</a>
+                        </div>
+
+                        <div class="hero-socials">
+                            <a href="https://github.com/Nour-Ghaly" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/nour-ghaly-58482b322/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="mailto:nourghaly111@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="https://wa.me/201064058613" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2 mb-4 mb-lg-0">
+                    <div class="hero-visual-wrapper">
+                        <div class="glass-frame" id="parallax-frame">
+                            <img src="images/Eng_nour.png" alt="Nour Ghaly Professional Portrait" class="profile-img" loading="eager">
+                            
+                            <!-- Floating Badges -->
+                            <div class="floating-badge badge-backend">
+                                <div class="badge-icon"><i class="fa-solid fa-code"></i></div>
+                                <div class="badge-text">
+                                    <span class="badge-label">BACKEND</span>
+                                    <span class="badge-value">Django + DRF</span>
+                                </div>
+                            </div>
+                            
+                            <div class="floating-badge badge-database">
+                                <div class="badge-icon"><i class="fa-solid fa-database"></i></div>
+                                <div class="badge-text">
+                                    <span class="badge-label">DATABASE</span>
+                                    <span class="badge-value">PostgreSQL</span>
+                                </div>
+                            </div>
+
+                            <div class="floating-badge badge-status">
+                                <div class="badge-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                                <div class="badge-text">
+                                    <span class="badge-label">STATUS</span>
+                                    <span class="badge-value">Open to work</span>
+                                </div>
+                            </div>
+                            
+                            <div class="floating-glow"></div>
+                            <div class="layer shape-1"></div>
+                            <div class="layer shape-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hero Stats Row at the bottom of the section -->
+            <div class="row hero-stats-row mt-4">
+                <div class="col-6 col-md-3 mb-3 mb-md-0">
+                    <div class="stat-card glass-card">
+                        <span class="stat-num" data-target="4.3">0</span>
+                        <span class="stat-lbl">GPA</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3 mb-md-0">
+                    <div class="stat-card glass-card">
+                        <span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span>
+                        <span class="stat-lbl">CERTIFICATIONS</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3 mb-md-0">
+                    <div class="stat-card glass-card">
+                        <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
+                        <span class="stat-lbl">PROJECTS</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3 mb-md-0">
+                    <div class="stat-card glass-card">
+                        <span class="stat-num" data-target="3">0</span><span class="stat-plus">+</span>
+                        <span class="stat-lbl">TRAININGS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Terminal Section -->
+    <section class="terminal-section py-5">
+        <div class="container">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="dot close"></span>
+                        <span class="dot minimize"></span>
+                        <span class="dot expand"></span>
+                    </div>
+                    <div class="terminal-title">Nour@portfolio:~</div>
+                </div>
+                <div class="terminal-body" id="terminal-body">
+                    <!-- Loaded dynamically via js -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="sub-title">01 / WHO AM I</span>
+                <h2 class="section-title">Professional Profile</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="about-card glass-card">
+                        <h3>Main Value Proposition</h3>
+                        <p class="brand-statement">Building scalable web applications, secure backend systems, modern database solutions, and impactful digital experiences through software engineering best practices.</p>
+                        <p class="mt-3">Computer Science student passionate about backend development, software engineering, artificial intelligence, and building real-world applications. Experienced in Django development, database systems, REST APIs, and full-stack web development through professional training programs and practical projects.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-details-card glass-card">
+                        <h3>Academic Matrix</h3>
+                        <ul class="matrix-list">
+                            <li><strong>Institution:</strong> Faculty of Science – Zagazig University</li>
+                            <li><strong>Department:</strong> Computer Science Branch</li>
+                            <li><strong>Study Timeline:</strong> Oct 2023 – Jul 2027</li>
+                            <li><strong>Current Status:</strong> 3rd Year Student / Excellent Standing</li>
+                            <li><strong>Target:</strong> Summer Internship at WE (Telecom Egypt)</li>
+                        </ul>
+                        <!-- حاوية باركود لينكد إن المخصص ومربوط بحسابك الفعلي تلقائياً -->
+<div class="linkedin-qr-wrapper text-center">
+    <p class="qr-title"><i class="fab fa-linkedin"></i> Scan to Connect</p>
+    <div class="qr-container">
+        <!-- توليد الباركود تلقائياً لحسابك Nour Ghaly -->
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=130x130&data=https://www.linkedin.com/in/nour-ghaly" alt="Nour Ghaly LinkedIn QR Code" class="qr-image">
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Me & Current Focus -->
+    <section class="focus-section section-padding bg-sec">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <div class="glass-card full-height highlight-border">
+                        <h3 class="accent-title"><i class="fa-solid fa-crosshairs"></i> Current Focus</h3>
+                        <ul class="focus-grid-list">
+                            <li><span class="bullet"></span> Backend Development with Django</li>
+                            <li><span class="bullet"></span> REST API Design & Architecture</li>
+                            <li><span class="bullet"></span> PostgreSQL Engineering</li>
+                            <li><span class="bullet"></span> Software Systems Architecture</li>
+                            <li><span class="bullet"></span> Clean Code & SOLID Principles</li>
+                            <li><span class="bullet"></span> AI Technologies Deployment</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="section-title-wrap mb-4">
+                        <span class="sub-title">COMPETITIVE ADVANTAGE</span>
+                        <h2 class="section-title">Why Choose Me</h2>
+                    </div>
+                    <div class="row g-3" id="why-choose-me-container">
+                        <!-- Loaded via dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Timeline Section -->
+    <section id="journey" class="timeline-section section-padding">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="sub-title">02 / EVOLUTION</span>
+                <h2 class="section-title">My Engineering Journey</h2>
+            </div>
+            <div class="timeline-wrapper">
+                <!-- Dynamically loaded timeline elements -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section section-padding bg-sec">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="sub-title">03 / KNOWLEDGE PLATFORM</span>
+                <h2 class="section-title">Formal Education</h2>
+            </div>
+            <div class="edu-card glass-card">
+                <div class="edu-header">
+                    <div>
+                        <h3>Bachelor of Computer Science</h3>
+                        <span class="edu-inst">Faculty of Science – Zagazig University</span>
+                    </div>
+                    <span class="edu-badge">2023 – 2027</span>
+                </div>
+                <div class="coursework-wrapper mt-4">
+                    <h4>Core Core Academic Matrix:</h4>
+                    <div class="course-tags" id="coursework-container">
+                        <!-- Filled by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="projects" class="projects-section section-padding">
+    <div class="container">
+        <div class="section-title-wrap text-center mb-5">
+            <span class="sub-title">04 / MY WORK</span>
+            <h2 class="section-title">Technical Projects</h2>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="project-card glass-card">
+                    <div class="project-img-wrapper">
+                        <img src="Projects/Hotel.png" alt="Hotel Management Platform" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Nour-Ghaly/Hotel" class="project-link-icon" title="View Code"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/Nour-Ghaly/Hotel" class="project-link-icon" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content p-4">
+                        <span class="project-category">Full-Stack PHP</span>
+                        <h3 class="project-item-title">Hotel Management System</h3>
+                        <p class="project-text">A comprehensive dynamic booking and management web application engineered with robust backend logic and scalable database architecture.</p>
+                        <div class="project-tags">
+                            <span>PHP / Laravel</span>
+                            <span>MySQL</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="project-card glass-card">
+                    <div class="project-img-wrapper">
+                        <img src="Projects/Tebyan.png" alt="Tbyan Full-Stack Platform" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Nour-Ghaly/Tebyan" class="project-link-icon" title="View Code"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/Nour-Ghaly/Tebyan" class="project-link-icon" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content p-4">
+                        <span class="project-category">Full-Stack Solution</span>
+                        <h3 class="project-item-title">Tbyan Platform</h3>
+                        <p class="project-text">An integrated enterprise solution featuring advanced data workflows, interactive management dashboards, and optimal system integration.</p>
+                        <div class="project-tags">
+                            <span>Full-Stack</span>
+                            <span>Database Systems</span>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="project-card glass-card">
+                    <div class="project-img-wrapper">
+                        <img src="Projects/Tempo.png" alt="Tempo Frontend Implementation" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://nour-ghaly.github.io/Tempo/" class="project-link-icon" title="View Code"><i class="fab fa-github"></i></a>
+                            <a href="https://nour-ghaly.github.io/Tempo/" class="project-link-icon" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content p-4">
+                        <span class="project-category">Frontend Architecture</span>
+                        <h3 class="project-item-title">Tempo Web Interface</h3>
+                        <p class="project-text">A modern, pixel-perfect, and highly responsive user interface featuring dynamic CSS layouts, custom animations, and responsive interactions.</p>
+                        <div class="project-tags">
+                            <span>HTML5 / CSS Grid</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Project Details Modal Layout -->
+    <div class="custom-modal" id="project-modal" role="dialog" aria-hidden="true">
+        <div class="modal-backdrop" id="modal-close-bg"></div>
+        <div class="modal-window glass-card">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+            <div class="modal-body-content" id="modal-injected-content">
+                <!-- Populated inside UI controller -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding bg-sec">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="sub-title">06 / CAPABILITIES MATRIX</span>
+                <h2 class="section-title">Technical Stack & Competencies</h2>
+            </div>
+            <div class="row g-4" id="skills-matrix-wrapper">
+                <!-- Dynamically Rendered categories -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section section-padding">
+        <div class="container">
+            <div class="section-title-wrap d-flex justify-content-between align-items-end flex-wrap gap-3">
+                <div>
+                    <span class="sub-title">07 / CREDENTIALS</span>
+                    <h2 class="section-title">Trainings & Certifications</h2>
+                </div>
+                <div class="cert-filters" id="cert-filters">
+                    <button class="filter-btn active" data-filter="all">All Credentials</button>
+                    <button class="filter-btn" data-filter="government">Government Tech Programs</button>
+                    <button class="filter-btn" data-filter="vendor">Global Vendors</button>
+                    <button class="filter-btn" data-filter="professional">Professional Skills</button>
+                </div>
+            </div>
+            <div class="row g-4 mt-2" id="certs-grid">
+                <!-- Loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider -->
+    <section class="testimonials-section section-padding bg-sec">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="sub-title">RECOMMENDATIONS</span>
+                <h2 class="section-title">Professional Endorsements</h2>
+            </div>
+            <div class="testimonial-slider-container">
+                <div class="testimonial-track" id="testimonial-track">
+                    <!-- Dynamic injection -->
+                </div>
+                <div class="slider-controls">
+                    <button class="ctrl-btn prev" id="slider-prev" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="ctrl-btn next" id="slider-next" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-title-wrap text-center">
+                <span class="sub-title">08 / PIPELINE CONNECTION</span>
+                <h2 class="section-title">Initiate Collaboration</h2>
+            </div>
+            <div class="row g-5 mt-2">
+                <div class="col-lg-5">
+                    <div class="contact-info-wrapper h-100 d-flex flex-column justify-content-between">
+                        <div class="info-card glass-card mb-3">
+                            <div class="info-meta d-flex align-items-center gap-3">
+                                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="info-label">Direct Endpoint</span>
+                                    <a href="mailto:nourghaly111@gmail.com" class="info-val">nourghaly111@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-card glass-card mb-3">
+                            <div class="info-meta d-flex align-items-center gap-3">
+                                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <span class="info-label">Secure Telecom Link</span>
+                                    <a href="tel:01064058613" class="info-val">01064058613</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-card glass-card mb-3">
+                            <div class="info-meta d-flex align-items-center gap-3">
+                                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="info-label">Node Location</span>
+                                    <span class="info-val">Belbeis, El-Sharqia, Egypt</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glass-card flex-grow-1 d-flex flex-column justify-content-center text-center p-4">
+                            <span class="text-accent h4 mb-2">Open For Opportunities</span>
+                            <p class="text-muted text-sm">Actively tracking Summer Internship evaluation nodes at WE (Telecom Egypt) and external freelance projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="form-wrapper glass-card">
+                        <form id="portfolio-contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="frm-name">Client Name / Identity</label>
+                                        <input type="text" id="frm-name" name="name" required placeholder="John Doe">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="frm-email">Return Endpoint Address (Email)</label>
+                                        <input type="email" id="frm-email" name="email" required placeholder="john@company.com">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="frm-subject">Subject Header</label>
+                                        <input type="text" id="frm-subject" name="subject" required placeholder="Project / Internship Pipeline">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="frm-msg">Transmission Body Payload</label>
+                                        <textarea id="frm-msg" name="message" rows="5" required placeholder="State your objective, parameters, or architectural requirements..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100" id="submit-btn">
+                                        <span class="btn-txt">Execute Transmission</span>
+                                        <span class="btn-loader hidden"><i class="fa-solid fa-spinner fa-spin"></i> Processing...</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="form-feedback" class="form-feedback-box mt-3 hidden"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Architectural Nodes -->
+    <footer class="footer-distributed">
+        <div class="container text-center py-4">
+            <p class="copyright-txt">&copy; 2026 Nour Ghaly. Built with customized Clean Architecture Engineering. All rights preserved.</p>
+            <div class="footer-badge-matrix mt-2">
+                <span class="sys-badge"><i class="fa-solid fa-shield-halved text-accent"></i> Secure Portfolio Architecture v2.0</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modular Script Architecture Sequential Loading to bypass local CORS rules -->
+    <script src="js/data.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
